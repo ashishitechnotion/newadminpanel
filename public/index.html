@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/font-awesome/css/font-awesome.min.css"/>
+    
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/simple-line-icons.css"/>
+    
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/themify-icons.css"/>
+    
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css"/>
+        <script src="%PUBLIC_URL%/assets/js/modernizr-custom.js"></script>
+
+        
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/jquery.dataTables.css"/>
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/dataTables.tableTools.css" />
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/dataTables.colVis.css" />
+        <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/custom.css" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+      <div id="ui" class="ui">
+          <header id="header" class="ui-header">
+              
+                          <div class="navbar-header">
+              
+                              <a class="navbar-brand">
+                                  <span class="logo"><img src="assets/imgs/magestic-logo.png" style="height: 36px;" alt="" /></span>
+                                  <span class="logo-compact"><img src="assets/imgs/magestic-logo.png"  style="height: 36px;" alt="" /></span>
+                              </a>
+                          </div>
+                          <div class="navbar-collapse nav-responsive-disabled">
+                              <ul class="nav navbar-nav">
+                                  <li>
+                                      <a class="toggle-btn" data-toggle="ui-nav">
+                                          <i class="fa fa-bars"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav navbar-nav navbar-right">
+                                  <li class="dropdown">
+                                      <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                          <i class="fa fa-bell-o"></i>
+                                          <span class="badge">5</span>
+                                      </a>
+                                      <ul class="dropdown-menu dropdown-menu--responsive">
+                                          <div class="dropdown-header">Notifications (12)</div>
+                                          <ul class="Notification-list Notification-list--small niceScroll list-group">
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--read" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar Notification__avatar--danger pull-left">
+                                                  <i class="Notification__avatar-icon fa fa-bolt"></i>
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>Server Error Report</b></p>
+                                                          <p class="Notification__highlight-time">1.2 hours ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--read" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar Notification__avatar--success pull-left">
+                                                          <i class="Notification__avatar-icon fa fa-user-plus"></i>
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>New Member Registration</b></p>
+                                                          <p class="Notification__highlight-time">2 hours ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--read" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar pull-left">
+                                                          <img src="assets/imgs/a0.jpg" alt="...">
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>Tomas Edison</b> and 4 other people like your post “keep clam and watch the fizz”.</p>
+                                                          <p class="Notification__highlight-time">1 day ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+              
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--unread" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar pull-left">
+                                                          <img src="assets/imgs/a0.jpg" alt="...">
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>Luciad Extic</b> can join conference.</p>
+                                                          <p class="Notification__highlight-time">1 hour ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--unread" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar Notification__avatar--info pull-left">
+                                                          <i class="Notification__avatar-icon fa fa-database"></i>
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>Database Error</b></p>
+                                                          <p class="Notification__highlight-time">2 days ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--read" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar Notification__avatar--danger pull-left">
+                                                          <i class="Notification__avatar-icon fa fa-bolt"></i>
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>Server Error Report</b></p>
+                                                          <p class="Notification__highlight-time">1.2 hours ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                              <li class="Notification list-group-item">
+                                                  <button class="Notification__status Notification__status--read" type="button" name="button"></button>
+                                                  <a>
+                                                      <div class="Notification__avatar Notification__avatar--success pull-left">
+                                                          <i class="Notification__avatar-icon fa fa-user-plus"></i>
+                                                      </div>
+                                                      <div class="Notification__highlight">
+                                                          <p class="Notification__highlight-excerpt"><b>New Member Registration</b></p>
+                                                          <p class="Notification__highlight-time">2 hours ago</p>
+                                                      </div>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                          <div class="dropdown-footer"><a>View more</a></div>
+                                      </ul>
+              
+                                  </li>
+              
+              
+              
+                                  <li class="dropdown dropdown-usermenu">
+                                      <a class=" dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                          <div class="user-avatar"><img src="assets/imgs/a0.jpg" alt="..."></div>
+                                          <span class="hidden-sm hidden-xs">Admin</span>
+              
+                                          <span class="caret hidden-sm hidden-xs"></span>
+                                      </a>
+                                      <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+              
+                                          <li><a><i class="fa fa-cogs"></i>  Settings</a></li>
+                                          <li><a href=""><i class="fa fa-user"></i>  Profile</a></li>
+              
+                                          <li><a><i class="fa fa-commenting-o"></i>  Feedback</a></li>
+              
+                                          <li><a><i class="fa fa-life-ring"></i>  Help</a></li>
+                                          <li class="divider"></li>
+                                          <li><a href=""><i class="fa fa-sign-out"></i> Log Out</a></li>
+                                      </ul>
+                                  </li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+              
+              
+                          </div>
+              
+                      </header>
+              
+                      <aside id="aside" class="ui-aside">
+                          <ul class="nav" ui-nav>
+                              <li class="nav-dashb">
+                                  <a href="%PUBLIC_URL%/"><i class="fa fa-home fa-lg"></i><span> Dashboard </span></a>
+                              </li>
+                              <li class="nav-chr">
+                                  <a href="%PUBLIC_URL%/managequestion"><i class="fa fa-stack-overflow fa-lg"></i><span>Manage Question</span></a>
+                              </li>
+                              <li class="nav-user">
+                                  <a href="%PUBLIC_URL%/manageview"><i class="fa fa-eye fa-lg"></i><span>View Audit</span></a>
+                              </li>
+                              <li class="nav-user">
+                                  <a href="%PUBLIC_URL%/manageuser"><i class="fa fa-users fa-lg"></i><span>Manage User</span></a>
+                              </li>
+              
+                          </ul>
+                      </aside>
+              
+                      <div id="content" class="ui-content">
+                          <div class="ui-content-body">
+              
+                              <div class="ui-container">
+    <div id="root"></div>
+  </div>
+  
+  
+  
+              </div>
+          </div>
+  
+  
+          <div id="footer" class="ui-footer">
+              <script>document.write(new Date().getFullYear())</script> &copy; Majestic Services Group.
+          </div>
+    </div>
+
+    <script src="%PUBLIC_URL%/assets/js/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/jquery.nicescroll.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/autosize.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/main.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/jquery.dataTables.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/dataTables.tableTools.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/dataTables.bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/dataTables.colVis.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/dataTables.responsive.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/dataTables.scroller.js"></script>
+    <script>
+        $("datatable").DataTable();
+      </script>
+  </body>
+</html>
