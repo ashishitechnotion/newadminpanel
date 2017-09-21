@@ -3,7 +3,6 @@ import {render} from 'react-dom';
 import TopBar from '../TopBar/TopBar.js';
 import SideBar from '../SideBar/SideBar.js';
 import Footer from '../Footer/Footer.js';
-import manageQuestion from '../Audit/ViewAudit';
 
 class Layout extends Component
 {
@@ -20,7 +19,7 @@ class Layout extends Component
                 <div id="content" className="ui-content">
                     <div className="ui-content-body">
                         <div className="ui-container">
-                        <manageQuestion/>
+                            {this.props.children}
                         </div>
                     </div>
                 </div>
