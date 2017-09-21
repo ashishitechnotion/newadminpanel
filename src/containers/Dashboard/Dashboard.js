@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import { render } from 'react-dom';
-import CardStrip from '../component/cardStrip/index.js';
+import CardStrip from '../../component/CardStrip/Index';
 class DashBoard extends Component 
 {
     constructor(props)

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import { render } from 'react-dom';
-import AHref from '../component/aHref/index.js';
+import AHref from '../../component/AHref/Index.js';
 class ManageQuestion extends Component 
 {
     constructor(props) 

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import { render } from 'react-dom';
-import DefaultButton from '../component/button/index.js';
+import DefaultButton from '../../component/Button/Index';
 class ManageUser extends Component 
 {
     constructor(props) 
